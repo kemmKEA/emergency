@@ -66,8 +66,7 @@ h3 {
   font-size: var(--headline3-size);
 }
 
-#instruction > main > h1,
-#register > main > h1 {
+main > h1 {
   background-color: var(--headline-bg-color-alert);
   color: var(--headline-color-inverted);
   line-height: 4rem;

@@ -13,12 +13,8 @@ main {
 main > *:not(:first-child) {
   margin: 0 1rem;
 }
-#frontpage > main,
-#instruction > main {
+main {
   grid-template-rows: min-content min-content 1fr min-content;
-}
-#register > main {
-  grid-template-rows: min-content 1fr min-content;
 }
 
 /* LAYOUT FOR HEADER AND FOOTER */
@@ -67,7 +63,8 @@ footer ul {
     grid-template-columns: 6fr 3fr;
     grid-template-rows: auto 1fr auto;
   }
-  #instruction > main {
+  #instruction > main,
+  #register > main {
     grid-template-columns: 5fr 3fr;
     grid-template-rows: auto 1fr auto;
   }
