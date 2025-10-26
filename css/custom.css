@@ -1,37 +1,64 @@
 :root {
   /* Colours */
-  --primary-bg-color: #e8ebee; /* used */
-  --primary-font-color: #474d52; /* used */
+  --color-bg: #fceb94; /* page background */
+  /*   
+  --primary-bg-color: #e8ebee; 
+  --primary-font-color: #474d52;
 
-  --secondary-bg-color: #5d656c; /* used */
-  --secondary-font-color: #d5e5f4; /* used */
+  --secondary-bg-color: #5d656c;
+  --secondary-font-color: #d5e5f4; */
 
-  /* CAN BE DELETED WHEN THE PLACEHOLDER CLASS IS DELETED */
-  --placeholder-bg-color: #eb9e1a; /* used */
-  --placeholder-font-color: #575c61; /* used */
+  /* Header */
+  --color-head-bg: #ff4b00;
 
-  /* NOT USED AT THE MOMENT */
-  --info-color: #17a2b8;
-  --warning-color: #ffc107;
-  --danger-color: #dc3545;
+  /* Logotype */
+  --color-logotype-bg: #000000;
+  --color-text-logotype: #fffae2;
+  --font-logotype-size: 1.5rem;
+
+  /* Global menu */
+  --color-menu-bg: #6f90eb;
+  /* Links */
+  --color-link-bg: #fffae2;
+  --color-link-hover: #fff; /* used */
+  --color-link-active: #eb9e1a; /* used */
+  --border-radius-links: 37px;
+
+  /* Headlines og rubrik */
+  --font-h1-size: 1.7rem;
+  --font-sub1-size: 1.5rem;
+  --font-h2-size: 1.2rem;
+  --font-h3-size: 1.15rem;
+  --color-headline-bg: #000000;
+  --color-headline-text-page: #fffae2;
+
+  /* Tekst */
+  --color-text: #000;
+  --color-text-inverted: #fffae2;
+
+  /*  Marginer */
+  --margin-head-bottom: 25px;
 
   /* Borders */
-  --border-color: #007bff; /* used */
-  --border-color-light: #f7f5c2; /* used */
-  --border-radius: 0.25rem;
+  /* --border-color: #007bff; 
+  --border-color-light: #f7f5c2;  */
+  --border-radius: 20px;
 
-  /* Links */
-  --link-color: #84888e; /* used */
-  --hover-color: #f9fcfe; /* used */
-  --active-color: #f52727; /* used */
-
-  /* From styletile */
+  /* Cards */
+  --color-card-bg: #fff;
+  --color-cta-card-bg: #ff4b00;
+  /* news-cards */
+  --color-news-bg: #fffae2;
+  --color-news-bg-inverted: #dbe2f5;
+  --color-cta-newscard-bg: #ffa680;
+  --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
-  --logotype-font: "Roboto", sans-serif;
-  --headline-font: "Roboto", sans-serif;
-  --body-font: "Roboto", sans-serif;
-  --link-font: "Calibri", sans-serif;
+  --font-family-sans: "Rubik", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 
   /* Text sizes */
   --logotype-size: 1.5rem;
@@ -43,8 +70,49 @@
   --followup-text-size: 0.8rem;
   --form-submit-size: 1rem;
 
+  /* Infographics */
+  --color-info-bg: #fff;
+  --color-infobox-1-bg: #fceb94;
+  --color-infobox-2-bg: #def5db;
+
+  /* --btn-second-bg-color: #6f90eb;
+  --card-second-bg-color: #dbe2f5;
+  --fact-second-bg-color: #def5db;
+  --page-main-bg-color: #f8cf00;
+  --fact-first-bg-color: #fceb94;
+  --marker-color: #ff0000;
+  --btn-first-bg-color: #ffa680;
+  --card-first-bg-color: #fffae2;
+  --section-bg-color: #ffffff; */
+
+  /* --color-surface: #ffffff; 
+  --color-surface-alt: #dbe2f5; 
+  --color-text-muted: #1a1a1acc; */
+
+  /* --color-primary: #ff4b00; 
+  --color-primary-contrast: #fff;
+  --color-secondary: #6f90eb;
+  --color-secondary-contrast: #fff; */
+
+  /* --color-info: #6f90eb;
+  --color-success: #2e7d32;
+  --color-success-bg: var(--color-green-100);
+  --color-warning: var(--color-yellow-500);
+  --color-warning-bg: var(--color-yellow-200);
+  --color-danger: var(--color-red-600); */
+
+  /* --color-border: #00000020;
+  --color-divider: #00000014;
+  --focus-ring: var(--color-blue-500); */
+
+  /* CAN BE DELETED WHEN THE PLACEHOLDER CLASS IS DELETED */
+  /* --placeholder-bg-color: #eb9e1a; 
+  --placeholder-font-color: #575c61;  */
+
+  /* From styletile */
+
   /* Text colors */
-  --logotype-color: #ffffff;
+  /* --logotype-color: #ffffff;
   --headline-color: #bbc3ca;
   --headline-color-inverted: #f9fcfe;
   --bodytext-color: #575c61;
@@ -55,10 +123,10 @@
   --followup-text-color-inverted: #bbc3ca;
   --formfield-text-color: #575c61;
   --form-submit-color: #bbc3ca;
-  --form-submit-color-inverted: #bbc3ca;
+  --form-submit-color-inverted: #bbc3ca; */
 
   /* Background colors */
-  --logotype-background-color: #a9aaae;
+  /* --logotype-background-color: #a9aaae;
   --header-background-color: #cfd5e5;
   --article-background-color: #dbdde3;
   --news-background-color: #dbdde3;
@@ -78,9 +146,9 @@
   --formfield-background-color: #dbdde3;
   --formfield-background-color-active: #dbdde3;
   --form-submit-bg-color: #dbdde3;
-  --form-submit-bg-color-inverted: #dbdde3;
+  --form-submit-bg-color-inverted: #dbdde3; */
 
   /* Info-boxes */
-  --info-bg-color-yellow: #d6d5ce;
-  --info-bg-color-green: #a6a6a0;
+  /* --info-bg-color-yellow: #d6d5ce;
+  --info-bg-color-green: #a6a6a0; */
 }

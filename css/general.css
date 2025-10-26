@@ -1,38 +1,25 @@
-html,
-body,
-header,
-footer,
-main,
-nav,
-ul,
-#main-disclamer {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: var(--default-font);
-  color: var(--primary-font-color);
-  background-color: var(--primary-bg-color);
+  font-family: var(--font-family-sans);
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
-header,
-footer {
-  background-color: var(--header-background-color);
-  color: var(--secondary-font-color);
+header {
   height: min-content;
 }
-.logo-wrapper {
-  background-color: var(--logotype-background-color);
-  color: var(--logotype-color);
-}
 #main-disclamer {
-  height: 180px;
-  background-color: var(--header-background-color);
+  height: 225px;
+  background-color: var(--color-head-bg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 2rem;
+  padding-bottom: 2%;
+  margin-bottom: var(--margin-head-bottom);
 }
 #main-disclamer-content {
   display: flex;
@@ -40,24 +27,34 @@ footer {
 }
 main section {
   padding: 20px;
-  /* margin: 10px; */
-  /* border: 1px solid var(--border-color); */
   border-radius: var(--border-radius);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--headline-font);
-}
 h1 {
-  font-size: var(--headline1-size);
-  color: var(--headline-color-inverted);
+  font-size: var(--font-h1-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-inverted);
   margin: 5px 0;
-  line-height: 1rem;
+  line-height: 1.3rem;
   text-align: left;
+}
+
+#instruction h1,
+#register h1 {
+  margin: 40px 0 20px 0;
+  padding: 15px 30px;
+  background-color: var(--color-head-bg);
+  font-size: var(--font-h2-size);
+}
+#instruction p {
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+  font-size: var(--font-h2-size);
+  line-height: 1.5rem;
+}
+.sub {
+  font-size: var(--font-sub1-size);
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-inverted);
 }
 h2 {
   font-size: var(--headline2-size);
@@ -65,76 +62,61 @@ h2 {
 h3 {
   font-size: var(--headline3-size);
 }
-
 main > h1 {
-  background-color: var(--headline-bg-color-alert);
-  color: var(--headline-color-inverted);
-  line-height: 4rem;
-  padding: 5px 3rem 0 3rem;
   width: calc(80% - 6rem);
 }
-
 /* NAVIGATION STRUCTURES */
 header > nav {
   height: 100%;
+  background-color: var(--color-menu-bg);
 }
 nav ul {
   list-style: none;
 }
-nav a {
-  font-family: var(--link-font);
-  text-decoration: none;
-  color: var(--link-color);
-}
 a {
-  font-family: var(--link-font);
+  font-family: var(--font-family-sans);
 }
+nav a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+/* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: var(--logotype-background-color);
-  margin: 0;
+  background-color: var(--color-logotype-bg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 0 0 1rem;
+  height: 3.6rem;
 }
 #logotype-wrapper > a {
-  font-size: var(--logotype-size);
-  color: var(--logotype-color);
-  font-family: var(--logotype-font);
-  height: 3rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  color: var(--color-text-logotype);
+  font-size: var(--font-logotype-size);
+  font-weight: var(--font-weight-medium);
+  width: max-content;
+  margin-left: 1rem;
 }
+/* Global menu */
 header nav li a {
   margin: 1.5rem;
-  background-color: var(--followup-text-bg-color);
-  color: var(--followup-text-color);
+  background-color: var(--color-link-bg);
+  color: var(--color-text);
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-links);
 }
+/* Pilen efter menu-tekst */
 header > nav li > a:after {
   content: " \2192";
 }
+/* Global menu hover effekt - Lav den om til det, du synes */
 nav a:hover {
-  color: var(--hover-color);
+  background-color: var(--color-link-hover);
 }
 nav a:active {
-  color: var(--active-color);
+  background-color: var(--color-link-active);
 }
 
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
-}
-.yellow,
-.green {
-  padding: 1.5rem 1rem 0.5rem 1rem;
-}
-.yellow {
-  background-color: var(--info-bg-color-yellow);
-}
-.green {
-  background-color: var(--info-bg-color-green);
 }
