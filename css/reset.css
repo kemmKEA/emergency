@@ -29,7 +29,7 @@ li {
 img,
 svg {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -54,7 +54,7 @@ input:where([type="checkbox"], [type="radio"]) {
   height: 1em;
 }
 
-textarea {
+textarea:where(:not([rows])) {
   resize: none;
   min-height: 4lh;
 }
@@ -66,6 +66,10 @@ legend {
 select,
 ::picker(select) {
   appearance: base-select;
+}
+
+[popover] {
+  margin: auto;
 }
 
 .visually-hidden {
